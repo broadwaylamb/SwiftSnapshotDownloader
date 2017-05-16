@@ -7,7 +7,9 @@ from source. Like this:
 ```
 $ git clone https://github.com/broadwaylamb/SwiftSnapshotDownloader.git
 $ cd SwiftSnapshotDownloader
-$ swift build -c release
+$ swift build -c release -Xswiftc -static-stdlib
+$ cd .build/release
+$ cp -f SwiftSnapshotDownloader /usr/local/bin/ssd
 ```
 
 ## What does it do?
